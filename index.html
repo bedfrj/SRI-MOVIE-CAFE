@@ -1,143 +1,251 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="si">
 <head>
-  
-  <script type='text/javascript' src='//pl25686859.effectiveratecpm.com/d7/26/3a/d7263a470d210ab2de92d0e7bbc2cd8c.js'></script>
-  
-  <script type='text/javascript' src='//pl26277017.effectiveratecpm.com/74/3d/6a/743d6a7cb15704d2be568d6d97eba508.js'></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dooplay Style Movie Page</title>
+    <title>SRI MOVIE CAFE</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            height: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #141414;
+        @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Roboto:wght@700&display=swap');
+
+        body {
+            background-color: black;
+            text-align: center;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
-        .container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+        h1 {
+            font-family: 'Days One', sans-serif;
+            margin-bottom: 5px; /* H1 යටින් තරමක් අඩු කරන්න */
         }
-        .movie-card {
-            display: flex;
-            flex-direction: column;
-            background-color: #222;
-            padding: 20px;
-            border-radius: 8px;
-            align-items: center;
-            text-align: center;
-            max-width: 400px;
-        }
-        .movie-card img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .movie-details {
-            margin-top: 10px;
-        }
-        .movie-details h2 {
-            margin: 0;
-            color: #ffcc00;
-        }
-        .movie-details p {
-            margin: 5px 0;
-        }
-        .imdb-rating {
-            color: #ffcc00;
-        }
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 15px;
-            width: 100%;
-            max-width: 250px;
-        }
-        .download-buttons {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 250px;
-        }
-        .button {
-            display: block;
-            background-color: #ffcc00;
-            color: #222;
-            text-align: center;
-            padding: 10px;
-            text-decoration: none;
+
+        .best-movie {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px; /* පොඩි අකුරු */
             font-weight: bold;
-            border-radius: 5px;
-            transition: transform 0.2s ease, background-color 0.3s ease;
-            width: 48%;
-            cursor: pointer;
+            color: white;
+            margin-top: -5px; /* ඉහල වචනයට ලඟින් ගන්න */
         }
-        .button:hover {
-            background-color: #e6b800;
+
+        .white {
+            color: white;
         }
-        .button:active {
-            transform: scale(0.95);
-        }
-        .watch-now {
-            width: 100%;
-            padding: 15px;
+
+        .red {
+            color: red;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="movie-card">
-        <img src="https://resizing.flixster.com/FTHBGq9jCInQsKBj9dhfLIVIxrM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg2NWVmODUwLWIzMDAtNGVkMC1iODgwLWZmZDAyOTVkODkwYS5qcGc=" alt="Movie Poster">
-        <div class="movie-details">
-            <h2>Anora (2024)</h2>
-            <p><strong>Director:</strong> Sean Baker</p>
-            <p><strong>Duration:</strong> 139m</p>
-            <p><strong>Release Date:</strong> Release date
-October 18, 2024</p>
-            <p><strong>Language/Genre:</strong> English / Romantic / Comedy / Drama</p>
-            <p class="imdb-rating"><strong>IMDB Rating:</strong> ⭐ 7.5/10</p>
-        </div>
-        <div class="download-buttons">
-            <a href="#" class="button" id="download1080p">Download 1080p</a>
-            <a href="#" class="button" id="download720p">Download 720p</a>
-        </div>
-        <div class="button-container">
-            <a href="https://www.effectiveratecpm.com/mq1h6nhuc?key=87e8955903ca4558b9263de10927d361" class="button watch-now">Watch Now</a>
-        </div>
+    <h1>
+        <span class="white">SRI</span> 
+        <span class="red">MOVIE</span> 
+        <span class="white">CAFE</span>
+    </h1>
+    <p class="best-movie">BEST MOVIE FREE DOWNLOAD</p>
+    
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .tv-button, .about-button {
+            padding: 15px 30px; /* Reduced padding for shorter buttons */
+            font-size: 14px; /* Slightly larger font size */
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .tv-button:active, .about-button:active {
+            transform: scale(0.9);
+            background-color: darkred;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Center the buttons horizontally */
+            margin-top: 30px; /* Further reduced the margin-top to move the buttons higher */
+        }
+
+        .button-container button {
+            width: 150px; /* Set equal width for both buttons */
+        }
+
+        .button-container .about-button {
+            background-color: red; /* Blue color for About button */
+        }
+
+        .button-container .about-button:active {
+            background-color: darkblue; /* Darker blue when clicked */
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="tv-button" id="tvShowButton">TV Show</button>
+        <button class="about-button" id="aboutButton">About</button> <!-- About button -->
     </div>
-</div><script>
-    document.getElementById("download1080p").addEventListener("click", function(event) {
-        event.preventDefault();
-        setTimeout(function () {
-            window.location.href = "https://f2l.madxbotz.workers.dev/128066/?MadxBotz=AgADhh";
-        }, 500);
-    });
+    <script>
+        $(document).ready(function() {
+            $('#tvShowButton').on('click', function() {
+                $(this).text('Loading...');
+                setTimeout(() => {
+                    window.open('https://your-link-here.com', '_blank');
+                    $(this).text('TV Show');
+                }, 2000);
+            });
 
-    document.getElementById("download720p").addEventListener("click", function(event) {
-        event.preventDefault();
-        setTimeout(function () {
-            window.location.href = "https://f2l.madxbotz.workers.dev/128064/?MadxBotz=AgADhx";
-        }, 500);
-    });
-</script>
-
-<script type='text/javascript' src='//pl26235600.effectiveratecpm.com/89/11/05/891105eab2e6f0073b4ee2953cd763d6.js'></script>
-
-<script type='text/javascript' src='//pl25686859.effectiveratecpm.com/d7/26/3a/d7263a470d210ab2de92d0e7bbc2cd8c.js'></script>
+            $('#aboutButton').on('click', function() {
+                $(this).text('Loading...');
+                setTimeout(() => {
+                    window.open('https://about-link-here.com', '_blank'); // Replace with the desired link for About
+                    $(this).text('About');
+                }, 2000);
+            });
+        });
+    </script>
 </body>
+</html>
+
+<!DOCTYPE html><html lang="en">
+<head>
+  
+  <script type='text/javascript' src='//pl26241410.effectiveratecpm.com/89/fc/dd/89fcdd7f20b4b913c204c9a2e9bb27d9.js'></script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI MOVIE CAFE</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #111; color: white; }
+        .search-box { margin: +10px; padding: 10px; width: 80%; max-width: 400px; border: 1px solid #ccc; border-radius: 5px; }
+        .suggestions { background: white; color: black; position: absolute; width: 80%; max-width: 400px; border: 1px solid #ccc; border-radius: 5px; display: none; text-align: left; z-index: 1000; }
+        .suggestions div { padding: 10px; cursor: pointer; }
+        .suggestions div:hover { background: #FF0000; }
+        .movie-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-items: center; max-width: 800px; margin: auto; }
+        .movie { width: 100%; text-align: center; cursor: pointer; position: relative; }
+        .movie img { width: 100%; height: auto; display: block; border-radius: 5px; transition: filter 0.3s ease, transform 0.3s ease; }
+        .movie:hover img { filter: blur(2px); transform: scale(1.05); }
+        .back-button, .next-button { display: none; margin: 20px auto; padding: 10px 20px; background-color: red; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+    <div style="position: relative; display: inline-block;">
+        <input type="text" id="search" class="search-box" placeholder="Search for a movie..." oninput="showSuggestions(this.value)">
+        <div id="suggestions" class="suggestions"></div>
+    </div>
+    <button id="backPageButton" class="back-button" onclick="prevPage()">Back Page</button>
+    <button id="backButton" class="back-button" onclick="goBack()">Back</button>
+    <div class="movie-gallery" id="gallery"></div>
+    <button id="nextButton" class="next-button" onclick="nextPage()">Next Page</button>
+    <script>
+    const movies = [
+        { title: "Jurassic World: Dominion (2022)", img: "https://m.media-amazon.com/images/M/MV5BZGExMWU2NWMtNzczYi00NjQ4LTk2YzctZGZkYmRmMDdhMjllXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "https://jurassic-world-2022-smc-dl.netlify.app/" },
+        { title: "Jurassic World (2018)", img: "https://m.media-amazon.com/images/M/MV5BNzIxMjYwNDEwN15BMl5BanBnXkFtZTgwMzk5MDI3NTM@._V1_.jpg", link: "https://jurassic-world-2018.netlify.app/" },
+        { title: "Jurassic World (2015)", img: "https://m.media-amazon.com/images/M/MV5BNzBhNzlkM2UtZTQyOC00NjUyLTkzMmMtNDQ1YTM5N2NmMGE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg", link: "https://jurassic-world-2015.netlify.app/" },
+        { title: "Jurassic Park (2001)", img: "https://m.media-amazon.com/images/M/MV5BN2FmMjhlZDYtNmYyMy00NTdjLTlhYzYtZWNlMDY2MmUzOGM2XkEyXkFqcGc@._V1_.jpg", link: "https://jurassic-park-2001.netlify.app/" },
+        { title: "Jurassic Park (1997)", img: "https://m.media-amazon.com/images/M/MV5BMGI3NDg5N2ItZGIyZi00ZWNkLWFlODUtZDA1Y2Q1M2U4NGM2XkEyXkFqcGc@._V1_.jpg", link: "https://jurassic-park-1997.netlify.app/" },
+        { title: "jurassic park (1993)", img: "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_FMjpg_UX1000_.jpg", link: "https://jurassic-park-1993.netlify.app/" },
+        { title: "Anora (2024)", img: "https://resizing.flixster.com/FTHBGq9jCInQsKBj9dhfLIVIxrM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg2NWVmODUwLWIzMDAtNGVkMC1iODgwLWZmZDAyOTVkODkwYS5qcGc=", link: "https://anora-2024.netlify.app/" },
+        { title: "Venom The Last Dance (2024)", img: "https://i.ibb.co/CsvznkYN/7616.jpg", link: "https://smc-mv-dl.netlify.app/" },
+        { title: "Sonic the Hedgehog (2024)", img: "https://i.ibb.co/5W7fMNKj/5734.jpg", link: "https://sonic-2024.netlify.app/" },
+        { title: "Sonic the Hedgehog (2022)", img: "https://i.ibb.co/WvNwm19P/7822.jpg", link: "https://sonic-2022.netlify.app/" },
+        { title: "Sonic the Hedgehog (2020)", img: "https://i.ibb.co/VcQzX33S/6413.jpg", link: "https://sonic-2020.netlify.app/" },
+        { title: "Atlas (2024)", img: "https://m.media-amazon.com/images/M/MV5BNGRmODRiNWItMmM1Zi00ZTFkLTkxNTUtNDBkM2ViODkzMWRlXkEyXkFqcGc@._V1_.jpg", link: "https://atlas-2024.netlify.app/" },
+        { title: "Venom (2018)", img: "https://i.ibb.co/HDmGJbt3/4493.jpg", link: "https://venom-2018.netlify.app/" },
+        { title: "Venom Let There Be Carnage (2021)", img: "https://i.ibb.co/S1bx4NJ/3959.jpg", link: "https://venom-2021-s.netlify.app/" },
+        { title: "Robot Overlords (2014)", img: "https://m.media-amazon.com/images/M/MV5BY2NhMTk5YTItYzRhNy00OWU0LWJhOTUtODE5Mjk0Mjk1MGRhXkEyXkFqcGc@._V1_.jpg", link: "https://robot-overlords-2014.netlify.app/" },
+        
+    ];
+    let currentPage = 0;
+    const moviesPerPage = 12;
+    function displayMovies() {
+        const start = currentPage * moviesPerPage;
+        const end = start + moviesPerPage;
+        gallery.innerHTML = "";
+        movies.slice(start, end).forEach(movie => {
+            let movieDiv = document.createElement("div");
+            movieDiv.className = "movie";
+            movieDiv.innerHTML = `
+                <a href="${movie.link}" target="_blank">
+                    <img src="${movie.img}" alt="${movie.title}">
+                </a>
+                <p>${movie.title}</p>
+            `;
+            gallery.appendChild(movieDiv);
+        });
+        document.getElementById("nextButton").style.display = end < movies.length ? "block" : "none";
+        document.getElementById("backPageButton").style.display = currentPage > 0 ? "block" : "none";
+    }
+    function nextPage() {
+        currentPage++;
+        displayMovies();
+    }
+    function prevPage() {
+        if (currentPage > 0) {
+            currentPage--;
+            displayMovies();
+        }
+    }
+    function showSuggestions(value) {
+        const suggestionsBox = document.getElementById("suggestions");
+        suggestionsBox.innerHTML = "";
+        if (value) {
+            const filteredMovies = movies.filter(m => m.title.toLowerCase().includes(value.toLowerCase()));
+            filteredMovies.forEach(movie => {
+                let suggestion = document.createElement("div");
+                suggestion.textContent = movie.title;
+                suggestion.onclick = () => {
+                    document.getElementById("search").value = movie.title;
+                    displaySearchResult(movie);
+                    suggestionsBox.style.display = "none";
+                };
+                suggestionsBox.appendChild(suggestion);
+            });
+            suggestionsBox.style.display = "block";
+        } else {
+            suggestionsBox.style.display = "none";
+        }
+    }
+    function displaySearchResult(movie) {
+        gallery.innerHTML = "";
+        let movieDiv = document.createElement("div");
+        movieDiv.className = "movie";
+        movieDiv.innerHTML = `
+            <a href="${movie.link}" target="_blank">
+                <img src="${movie.img}" alt="${movie.title}">
+            </a>
+            <p>${movie.title}</p>
+        `;
+        gallery.appendChild(movieDiv);
+        document.getElementById("backButton").style.display = "block";
+    }
+    function goBack() {
+        document.getElementById("search").value = "";
+        document.getElementById("backButton").style.display = "none";
+        displayMovies();
+    }
+    displayMovies();
+    </script>
+    
+    <script async="async" data-cfasync="false" src="//pl25686825.effectiveratecpm.com/b3d7cc2b247ba1169b8b747c98e26717/invoke.js"></script>
+<div id="container-b3d7cc2b247ba1169b8b747c98e26717"></div>
+
+<script type='text/javascript' src='//pl26277017.effectiveratecpm.com/74/3d/6a/743d6a7cb15704d2be568d6d97eba508.js'></script>
+
+<script type='text/javascript' src='//pl25783514.effectiveratecpm.com/1a/b1/b1/1ab1b16bd3765422ec96abadd25d8f0e.js'></script>
+
+</body>
+
+<footer>
+    <p>© 2025 Sri Movie Cafe. All rights reserved.</p>
+</footer>
 </html>
